@@ -1,0 +1,11 @@
+[
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "weight": 2
+      }
+    ]
+  }
+]

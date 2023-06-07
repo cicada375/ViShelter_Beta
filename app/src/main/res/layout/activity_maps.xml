@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="400dp"
+        android:layout_height="776dp"
+        map:layout_anchorGravity="bottom|center"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity"
+        tools:layout="@layout/support_simple_spinner_dropdown_item"
+        tools:layout_conversion_absoluteHeight="64dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="31dp"
+        android:contentDescription="@string/settings"
+        android:src="@drawable/baseline_settings_24"
+        android:textColorHint="@color/black"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/shapelayout"
+        android:contentDescription="@string/res"
+        map:layout_constraintEnd_toStartOf="@+id/button3"
+        map:layout_constraintStart_toEndOf="@+id/spinner2"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/shapelayout"
+        android:contentDescription="@string/res"
+        map:layout_constraintEnd_toStartOf="@+id/spinner"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
